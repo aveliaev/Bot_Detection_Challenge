@@ -1,0 +1,15 @@
+P0 0 abl_full epochs 21 best inner AUC 0.9232 382 s
+P0 0 abl_event epochs 15 best inner AUC 0.7963 483 s
+P0 0 abl_event_timing epochs 9 best inner AUC 0.8395 546 s
+P0 0 abl_event_timing_ptr epochs 11 best inner AUC 0.9059 627 s
+P0 0 abl_pointer_only epochs 14 best inner AUC 0.9366 658 s
+P0 1 abl_full epochs 9 best inner AUC 0.9187 722 s
+P0 1 abl_event epochs 16 best inner AUC 0.797 826 s
+P0 1 abl_event_timing epochs 11 best inner AUC 0.8558 901 s
+P0 1 abl_event_timing_ptr epochs 10 best inner AUC 0.9149 971 s
+P0 1 abl_pointer_only epochs 19 best inner AUC 0.9366 1013 s
+P0 2 abl_full epochs 9 best inner AUC 0.9198 1081 s
+P0 2 abl_event epochs 16 best inner AUC 0.7985 1192 s
+P0 2 abl_event_timing epochs 15 best inner AUC 0.8528 1296 s
+P0 2 abl_event_timing_ptr epochs 19 best inner AUC 0.9183 1434 s
+P0 2 abl_pointer_only epochs 7 best inner AUC 0.9304 1450 s

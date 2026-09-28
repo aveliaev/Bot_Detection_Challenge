@@ -1,0 +1,8 @@
+ok:   llr(all): own-day labels of training rows
+ok:   manifold: own-day labels of training rows
+FAIL: llr(hard): own-day labels of training rows
+ok:   uate: same-day and future labels
+ok:   llr: validation rows see only training labels (determinism)
+
+SUMMARY {'llr(all): own-day labels of training rows': 'ok', 'manifold: own-day labels of training rows': 'ok', 'llr(hard): own-day labels of training rows': 'FAIL', 'uate: same-day and future labels': 'ok', 'llr: validation rows see only training labels (determinism)': 'ok'}
+ok:   llr(trait): own-day labels of training rows

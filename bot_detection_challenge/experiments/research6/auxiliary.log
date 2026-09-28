@@ -1,0 +1,41 @@
+day 0 done 34 s
+day 1 done 64 s
+day 2 done 95 s
+day 3 done 129 s
+day 4 done 159 s
+day 5 done 189 s
+day 6 done 219 s
+day 7 done 249 s
+day 8 done 283 s
+day 9 done 313 s
+day 10 done 343 s
+day 11 done 374 s
+day 12 done 406 s
+day 13 done 437 s
+day test done 481 s
+day                          6.5000
+n_trans                  13170.9286
+A_nll                        1.6661
+A_acc                        0.3585
+A_top3                       0.7922
+A_nll_global                 1.6261
+A_nll_markov1                1.6258
+A_nll_markov2                1.6282
+A_acc_markov1                0.3746
+B_nll                        1.9712
+B_nll_freq                   2.0783
+B_acc                        0.2086
+B_mae                        1.3489
+B_mae_median                 1.4119
+B_mae_per_event              1.4105
+C_mae                        0.4778
+C_mae_by_k                   0.5251
+C_spearman                   0.4822
+D_mae                        0.5195
+D_mae_by_k                   0.5669
+D_spearman                   0.4518
+A_nll_shuffled_events        1.6651
+B_mae_shuffled_events        1.3425
+A_nll_shuffled_dt            1.6662
+B_mae_shuffled_dt            1.3434
+cookie table (15641, 12) total 482 s

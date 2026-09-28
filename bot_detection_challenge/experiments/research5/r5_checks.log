@@ -1,0 +1,11 @@
+== (1) nested crossings by subtype (summed over P0..P4 and fwd7)
+kind          FP_added  FP_removed  TP_added  TP_removed
+sub                                                     
+android             10           7        20          22
+ios                  0           1         0           3
+web no mouse        16           3        22          14
+web+mouse           15           4        28          25
+
+== (2) leakage tests
+ok:   P0 fold 3: outer labels flipped -> identical scores and choice
+ok:   fwd7 fold 7: outer labels flipped -> identical scores and choice

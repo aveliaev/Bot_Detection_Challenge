@@ -1,0 +1,5 @@
+aux all 12       adversarial AUC train-vs-test = 0.508
+event surprise   adversarial AUC train-vs-test = 0.509
+time surprise    adversarial AUC train-vs-test = 0.505
+future errors    adversarial AUC train-vs-test = 0.500
+B0-type reference adversarial AUC train-vs-test = 0.511  (['n_events', 'dtbin_ent', 'bigram_ent', 'sdt_median', 'evn_ent'])

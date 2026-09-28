@@ -1,0 +1,24 @@
+bots observed share rate 0.1472
+ null (global shuffle of bot delays) 0.0098
+ null (within-cookie shuffle) 0.1476
+ null (global shuffle of bot delays) 0.0107
+ null (within-cookie shuffle) 0.1455
+ null (global shuffle of bot delays) 0.0106
+ null (within-cookie shuffle) 0.1451
+g
+5,7,6,6    12
+6,6,5,6    12
+4,5,4,4    11
+4,4,5,4    11
+6,6,6,6    11
+6,7,6,7    11
+3,4,5,4    11
+5,6,6,6    11
+6,5,5,5    10
+7,5,6,6    10
+6,6,7,6    10
+6,5,5,6    10
+5,4,4,4     9
+4,4,3,4     9
+3,4,4,4     9
+Name: count, dtype: int64

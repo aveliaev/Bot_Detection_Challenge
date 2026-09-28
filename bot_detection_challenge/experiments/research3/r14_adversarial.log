@@ -1,0 +1,6 @@
+pool (reference)   adversarial AUC train-vs-test = 0.630   n_features=9
+llrhard            adversarial AUC train-vs-test = 0.809   n_features=12
+llrall             adversarial AUC train-vs-test = 0.745   n_features=12
+uate               adversarial AUC train-vs-test = 1.000   n_features=3
+manifold           adversarial AUC train-vs-test = 0.713   n_features=11
+llrtrait           adversarial AUC train-vs-test = 0.797   n_features=12

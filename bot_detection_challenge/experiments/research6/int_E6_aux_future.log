@@ -1,0 +1,4 @@
+E6_aux_future                      rep=0.9023±0.0047 [0.896,0.908] fwd7=0.8984 PR-AUC=0.8413 ROC=0.9547 {'P0': 0.8974, 'P1': 0.905, 'P2': 0.9077, 'P3': 0.9055, 'P4': 0.896, 'fwd7': 0.8984} 306.9s
+E6_aux_future: avg-OOF P@R 0.9023 -> 0.9077 | TP 541 FP 55 FN 231 | FP removed 5 added 1 | TP removed 8 added 4 | persistent FP still flagged 45/45
+paired bootstrap vs B0: {'p_better': 0.687, 'diff_mean': 0.0021, 'ci95': (-0.007739749053076045, 0.011174701565420879), 'point': 0.0054}
+platform P@R (inside segment): {'web+mouse': (0.8522, 0.8544), 'web no mouse': (0.9509, 0.9548), 'android': (0.569, 0.5719), 'ios': (0.1818, 0.1828)}

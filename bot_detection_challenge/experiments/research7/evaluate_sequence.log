@@ -1,0 +1,140 @@
+== 1. standalone cheap local models (cookie-level P@R>=0.70, ROC-AUC) and Spearman with B0
+model scheme    n  PR_seq_full  AUC_seq_full  PR_chunk_mean  AUC_chunk_mean  PR_chunk_median  AUC_chunk_median  PR_len5_mean  AUC_len5_mean  spearman_chunkmean_B0  PR_B0_same_rows
+   rf     P0 9522       0.6247        0.9132         0.5939          0.9097           0.5950            0.9105        0.5465         0.9048                 0.6283           0.8974
+   rf     P1 9522       0.6058        0.9151         0.6004          0.9105           0.5900            0.9115        0.5378         0.9045                 0.6318           0.8975
+   rf     P2 9522       0.6036        0.9124         0.6106          0.9105           0.5719            0.9106        0.5554         0.9046                 0.6304           0.9068
+   rf     P3 9522       0.6134        0.9146         0.6072          0.9088           0.5768            0.9111        0.5701         0.9029                 0.6283           0.8990
+   rf     P4 9522       0.6342        0.9163         0.6197          0.9108           0.6240            0.9129        0.5565         0.9056                 0.6318           0.9007
+   rf   fwd7 6874       0.5496        0.9051         0.5573          0.9026           0.5527            0.9039        0.5220         0.8963                 0.6353           0.9023
+  cat     P0 9522       0.6598        0.9235         0.6395          0.9155           0.6384            0.9179        0.6085         0.9095                 0.6832           0.8974
+  cat     P1 9522       0.6696        0.9226         0.6614          0.9169           0.6342            0.9187        0.5774         0.9099                 0.6846           0.8975
+  cat     P2 9522       0.6729        0.9231         0.6471          0.9153           0.6372            0.9185        0.5855         0.9091                 0.6811           0.9068
+  cat     P3 9522       0.6574        0.9235         0.6622          0.9141           0.6173            0.9167        0.5805         0.9081                 0.6812           0.8990
+  cat     P4 9522       0.6630        0.9240         0.6534          0.9149           0.6277            0.9182        0.5830         0.9092                 0.6848           0.9007
+  cat   fwd7 6874       0.6178        0.9124         0.5706          0.9064           0.5623            0.9109        0.5272         0.9016                 0.6858           0.9023
+
+rep mean (P0-P4):
+model                        cat         rf
+n                      9522.0000  9522.0000
+PR_seq_full               0.6645     0.6163
+AUC_seq_full              0.9233     0.9143
+PR_chunk_mean             0.6527     0.6064
+AUC_chunk_mean            0.9154     0.9101
+PR_chunk_median           0.6310     0.5915
+AUC_chunk_median          0.9180     0.9113
+PR_len5_mean              0.5870     0.5532
+AUC_len5_mean             0.9092     0.9045
+spearman_chunkmean_B0     0.6830     0.6301
+PR_B0_same_rows           0.9003     0.9003
+
+== 2. window-level discrimination by window length (P0 validation windows, label = cookie target)
+model    L  n_windows    AUC  PR_AUC
+   rf    3      40047 0.8372  0.5234
+   rf    5      35234 0.8758  0.6324
+   rf   10      24884 0.9039  0.7329
+   rf   20      13037 0.9431  0.8382
+   rf   40       4274 0.9691  0.9288
+   rf full       9522 0.9132  0.7287
+  cat    3      40047 0.8492  0.5389
+  cat    5      35234 0.8854  0.6518
+  cat   10      24884 0.9128  0.7528
+  cat   20      13037 0.9484  0.8538
+  cat   40       4274 0.9677  0.9319
+  cat full       9522 0.9235  0.7513
+
+== 3a. persistent FP vs matched TP (AUC>0.5 = TP higher), length-matched variant, sorted
+             feature                      match  AUC_TP_vs_pFP  ci_lo  ci_hi  med_pFP  med_TP  best
+           len20_std B0+platform+mouse+n_events          0.412  0.312  0.515    0.083   0.072 0.588
+           chunk_q10 B0+platform+mouse+n_events          0.416  0.336  0.494    0.175   0.134 0.584
+           len3_mean B0+platform+mouse+n_events          0.419  0.337  0.505    0.300   0.252 0.581
+           chunk_q25 B0+platform+mouse+n_events          0.427  0.363  0.507    0.271   0.220 0.573
+    position_std_L10 B0+platform+mouse+n_events          0.572  0.484  0.669    0.102   0.117 0.572
+           len10_std B0+platform+mouse+n_events          0.572  0.470  0.662    0.102   0.117 0.572
+           chunk_min B0+platform+mouse+n_events          0.428  0.338  0.509    0.085   0.070 0.572
+           len5_mean B0+platform+mouse+n_events          0.430  0.350  0.524    0.420   0.359 0.570
+            seq_full B0+platform+mouse+n_events          0.440  0.361  0.515    0.723   0.658 0.560
+          len40_mean B0+platform+mouse+n_events          0.441  0.270  0.597    0.830   0.746 0.559
+           frac_gt05 B0+platform+mouse+n_events          0.445  0.363  0.533    0.453   0.413 0.555
+          chunk_mean B0+platform+mouse+n_events          0.446  0.356  0.526    0.461   0.448 0.554
+          len10_mean B0+platform+mouse+n_events          0.450  0.369  0.524    0.552   0.522 0.550
+        chunk_median B0+platform+mouse+n_events          0.453  0.379  0.528    0.464   0.410 0.547
+           chunk_q75 B0+platform+mouse+n_events          0.456  0.381  0.528    0.625   0.611 0.544
+           frac_gt07 B0+platform+mouse+n_events          0.456  0.383  0.539    0.150   0.125 0.544
+ early_minus_late_L5 B0+platform+mouse+n_events          0.540  0.457  0.627   -0.058  -0.004 0.540
+           chunk_q90 B0+platform+mouse+n_events          0.462  0.388  0.546    0.713   0.710 0.538
+           frac_gt09 B0+platform+mouse+n_events          0.528  0.466  0.600    0.000   0.000 0.528
+           chunk_max B0+platform+mouse+n_events          0.473  0.395  0.556    0.826   0.845 0.527
+          len20_mean B0+platform+mouse+n_events          0.478  0.384  0.582    0.710   0.680 0.522
+     position_std_L5 B0+platform+mouse+n_events          0.519  0.437  0.607    0.136   0.156 0.519
+            len5_std B0+platform+mouse+n_events          0.519  0.431  0.603    0.136   0.156 0.519
+         chunk_range B0+platform+mouse+n_events          0.487  0.396  0.578    0.682   0.668 0.513
+early_minus_late_L10 B0+platform+mouse+n_events          0.494  0.398  0.595    0.029   0.008 0.506
+           chunk_std B0+platform+mouse+n_events          0.502  0.400  0.589    0.200   0.198 0.502
+
+== 3b. B0-only matching (top 8)
+            feature             match  AUC_TP_vs_pFP  ci_lo  ci_hi  med_pFP  med_TP  best
+          len20_std B0+platform+mouse          0.402  0.291  0.512    0.083   0.072 0.598
+          frac_gt09 B0+platform+mouse          0.585  0.502  0.667    0.000   0.013 0.585
+         len20_mean B0+platform+mouse          0.549  0.421  0.659    0.710   0.772 0.549
+          chunk_max B0+platform+mouse          0.541  0.461  0.621    0.826   0.891 0.541
+          len10_std B0+platform+mouse          0.539  0.435  0.638    0.102   0.114 0.539
+   position_std_L10 B0+platform+mouse          0.539  0.444  0.635    0.102   0.114 0.539
+early_minus_late_L5 B0+platform+mouse          0.538  0.431  0.647   -0.058   0.000 0.538
+          chunk_q90 B0+platform+mouse          0.529  0.452  0.613    0.713   0.782 0.529
+
+== 3c. conditional band 300-900 (length-stratified), orthogonality
+             feature  AUC_target  band300_900_AUC  band_AUC_len_strat  band_AUC_web+mouse  band_AUC_web no mouse  band_AUC_android  auc_vs_n_events  rho_B0  rho_n
+            seq_full       0.925            0.717               0.725               0.595                  0.726             0.693            0.554   0.753  0.116
+           chunk_q90       0.915            0.714               0.723               0.622                  0.720             0.694            0.665   0.619  0.361
+           chunk_q75       0.922            0.710               0.718               0.614                  0.726             0.689            0.614   0.708  0.251
+          len20_mean       0.950            0.708               0.718               0.538                  0.670             0.664              NaN   0.809  0.247
+          chunk_mean       0.921            0.707               0.715               0.612                  0.722             0.687            0.632   0.693  0.283
+          len10_mean       0.927            0.703               0.714               0.546                  0.714             0.703            0.651   0.720  0.311
+           chunk_max       0.897            0.701               0.713               0.626                  0.690             0.667            0.743   0.507  0.515
+        chunk_median       0.923            0.701               0.711               0.610                  0.717             0.687            0.576   0.760  0.162
+          len40_mean       0.967            0.707               0.707               0.353                  0.716             0.661              NaN   0.870  0.214
+           chunk_std       0.884            0.694               0.706               0.620                  0.662             0.664            0.671   0.482  0.361
+           frac_gt05       0.845            0.700               0.704               0.605                  0.725             0.634            0.569   0.416  0.267
+           len5_mean       0.914            0.687               0.702               0.614                  0.700             0.651            0.666   0.678  0.338
+           chunk_q25       0.917            0.678               0.687               0.599                  0.699             0.673            0.550   0.773  0.099
+         chunk_range       0.872            0.668               0.685               0.597                  0.614             0.665            0.765   0.437  0.570
+           frac_gt07       0.804            0.676               0.679               0.586                  0.684             0.631            0.544   0.394  0.221
+           len3_mean       0.900            0.666               0.672               0.605                  0.695             0.663            0.654   0.620  0.324
+           chunk_q10       0.907            0.654               0.663               0.590                  0.698             0.638            0.525   0.765  0.043
+           chunk_min       0.881            0.634               0.638               0.598                  0.695             0.605            0.480   0.727 -0.050
+     position_std_L5       0.831            0.615               0.621               0.651                  0.584             0.584            0.707   0.486  0.407
+            len5_std       0.831            0.615               0.621               0.651                  0.584             0.584            0.707   0.486  0.407
+           frac_gt09       0.732            0.618               0.620               0.592                  0.627             0.566            0.527   0.342  0.187
+           len10_std       0.810            0.577               0.617               0.568                  0.572             0.554            0.764   0.519  0.452
+    position_std_L10       0.810            0.577               0.617               0.568                  0.572             0.554            0.764   0.519  0.452
+           len20_std       0.774            0.531               0.601               0.510                  0.431             0.548              NaN   0.598  0.405
+ early_minus_late_L5       0.499            0.525               0.527               0.573                  0.534             0.439            0.496  -0.004 -0.013
+early_minus_late_L10       0.507            0.515               0.515               0.548                  0.513             0.481            0.503   0.013  0.018
+
+== 4a. medians by group
+                  B0  seq_full  chunk_mean  ...  chunk_q90  chunk_min  chunk_max
+grp                                         ...                                 
+FN             0.886     0.077       0.096  ...      0.172      0.021      0.251
+TP             0.971     0.851       0.602  ...      0.884      0.107      0.936
+easy neg       0.426     0.014       0.031  ...      0.055      0.007      0.094
+hard neg       0.880     0.069       0.096  ...      0.167      0.024      0.260
+other FP       0.941     0.061       0.074  ...      0.121      0.017      0.150
+persistent FP  0.957     0.723       0.461  ...      0.713      0.085      0.826
+
+[6 rows x 8 columns]
+
+== 4b. consistency at the same mean (matched on B0 rank + chunk_mean + platform x mouse): AUC TP vs pFP
+  chunk_mean       AUC=0.497  median pFP=0.461  median TP=0.449
+  chunk_std        AUC=0.545  median pFP=0.200  median TP=0.205
+  chunk_q10        AUC=0.486  median pFP=0.175  median TP=0.147
+  chunk_min        AUC=0.511  median pFP=0.085  median TP=0.084
+  chunk_range      AUC=0.527  median pFP=0.682  median TP=0.687
+  len5_std         AUC=0.570  median pFP=0.136  median TP=0.162
+  position_std_L5  AUC=0.570  median pFP=0.136  median TP=0.162
+  frac_gt07        AUC=0.503  median pFP=0.150  median TP=0.173
+
+== 5. order control: original vs order-shuffled validation windows
+  P0 rf: chunk_mean P@R 0.5939 -> shuffled 0.5976 | len-5 window AUC 0.876 -> 0.875 | corr(window score, shuffled) 0.911
+  P0 cat: chunk_mean P@R 0.6395 -> shuffled 0.6247 | len-5 window AUC 0.885 -> 0.887 | corr(window score, shuffled) 0.903
+  fwd7 rf: chunk_mean P@R 0.5573 -> shuffled 0.5583 | len-5 window AUC 0.862 -> 0.862 | corr(window score, shuffled) 0.907
+  fwd7 cat: chunk_mean P@R 0.5706 -> shuffled 0.5623 | len-5 window AUC 0.874 -> 0.875 | corr(window score, shuffled) 0.896

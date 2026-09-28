@@ -1,0 +1,61 @@
+FP set=op: 59 FP vs 545 TP; days [ 2  3  4  5  6  7  8  9 10 11 12 13]
+('B0feat', 'LR', 0.702, 0.689, 0.72, np.float64(0.501), np.float64(0.066))
+('B0feat', 'tree3', 0.696, 0.682, 0.718, nan, nan)
+('B0feat', 'ET', 0.791, 0.787, 0.794, nan, nan)
+('B0feat', 'cat', 0.759, 0.756, 0.763, np.float64(0.499), np.float64(0.064))
+('rep', 'LR', 0.684, 0.689, 0.681, np.float64(0.474), np.float64(0.046))
+('rep', 'tree3', 0.614, 0.612, 0.624, nan, nan)
+('rep', 'ET', 0.792, 0.796, 0.786, nan, nan)
+('rep', 'cat', 0.748, 0.785, 0.71, np.float64(0.485), np.float64(0.048))
+('both', 'LR', 0.69, 0.68, 0.7, np.float64(0.477), np.float64(0.068))
+('both', 'tree3', 0.65, 0.601, 0.696, nan, nan)
+('both', 'ET', 0.788, 0.785, 0.793, nan, nan)
+('both', 'cat', 0.761, 0.772, 0.75, np.float64(0.476), np.float64(0.027))
+features model  AUC_LODO  AUC_days<8  AUC_days>=8  null_mean  null_std
+  B0feat    LR     0.702       0.689        0.720      0.501     0.066
+  B0feat tree3     0.696       0.682        0.718        NaN       NaN
+  B0feat    ET     0.791       0.787        0.794        NaN       NaN
+  B0feat   cat     0.759       0.756        0.763      0.499     0.064
+     rep    LR     0.684       0.689        0.681      0.474     0.046
+     rep tree3     0.614       0.612        0.624        NaN       NaN
+     rep    ET     0.792       0.796        0.786        NaN       NaN
+     rep   cat     0.748       0.785        0.710      0.485     0.048
+    both    LR     0.690       0.680        0.700      0.477     0.068
+    both tree3     0.650       0.601        0.696        NaN       NaN
+    both    ET     0.788       0.785        0.793        NaN       NaN
+    both   cat     0.761       0.772        0.750      0.476     0.027
+
+cat importances (TP=1 vs FP=0) top 20
+sdt_q90                    5.57
+r_tr_item_v>search         4.39
+ua_browser_ver             3.67
+r_dt_7                     3.16
+dtbin_ent                  2.74
+r_dt_9                     2.60
+r_tr_search>photo_         2.32
+r_m_qrep                   2.22
+dtexact_uniq_ratio         2.21
+r_dt_8                     2.14
+r_dt_4                     1.97
+page_mean                  1.82
+sdt_band_90_1800           1.71
+frac_phone                 1.68
+hour_sin                   1.63
+r_ev_contact_phone_show    1.46
+frac_engage                1.31
+sdt_band_30_90             1.24
+dt_lt120                   1.24
+query_latin                1.19
+                     FP_med   TP_med
+sdt_q90              51.800   33.900
+r_tr_item_v>search    0.167    0.158
+ua_browser_ver      119.000  118.000
+r_dt_7                0.176    0.067
+dtbin_ent             1.896    1.783
+r_dt_9                0.077    0.000
+r_tr_search>photo_    0.000    0.000
+r_m_qrep              0.500    0.417
+dtexact_uniq_ratio    0.833    0.714
+r_dt_8                0.125    0.000
+r_dt_4                0.000    0.071
+page_mean             3.429    3.667

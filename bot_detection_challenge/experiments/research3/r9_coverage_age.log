@@ -1,0 +1,37 @@
+g                             D         E  FPother   TPnear   TPtop      pFP
+cov_cat_loc               0.500     0.500    0.536    0.500   0.382    0.433
+cov_q_page                1.000     1.000    0.929    1.000   0.877    0.866
+cov_loc_page              1.000     1.000    1.000    0.942   0.900    0.866
+page_inc1                 0.000     0.000    0.000    0.000   0.000    0.000
+page_backtrack            0.000     0.333    0.250    0.375   0.429    0.500
+qp_revisit                0.000     0.000    0.071    0.000   0.123    0.134
+create_to_first_h      1514.168  1139.829  294.736  486.071  60.277  438.200
+created_same_day          0.000     0.000    0.000    0.000   0.000    0.000
+created_sec              29.000    29.000   33.500   31.000  29.000   21.000
+created_hour             12.000    12.000   18.000   11.000  13.000   10.000
+create_to_first_mod_h     0.501     0.469    0.411    0.475   0.494    0.521
+ptr_xy_uniq               1.000     1.000    1.000    1.000   1.000    1.000
+
+AUC TPnear vs pFP (descriptive):
+  cov_cat_loc            0.563
+  cov_q_page             0.618
+  cov_loc_page           0.577
+  page_inc1              0.503
+  page_backtrack         0.427
+  qp_revisit             0.382
+  create_to_first_h      0.528
+  created_same_day       0.520
+  created_sec            0.588
+  created_hour           0.508
+  create_to_first_mod_h  0.470
+  ptr_xy_uniq            0.500
+
+created hour distribution share (pFP vs TPnear vs TPtop vs D)
+created_hour  (-1, 5]  (5, 11]  (11, 17]  (17, 23]
+g                                                 
+D                0.24     0.25      0.26      0.25
+E                0.23     0.24      0.29      0.24
+FPother          0.14     0.07      0.21      0.57
+TPnear           0.27     0.25      0.25      0.24
+TPtop            0.23     0.22      0.27      0.28
+pFP              0.22     0.29      0.24      0.24

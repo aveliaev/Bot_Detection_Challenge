@@ -1,0 +1,88 @@
+
+== neg=all scheme=P0 n_val=9522  (top by bot AUC, then top by near-FP AUC)
+            f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+ all_sig_mean    0.857       0.648            0.523     0.023
+  all_sig_sum    0.845       0.641            0.499     0.001
+  all_sig_q25    0.840       0.647            0.523     0.023
+  all_sig_q75    0.831       0.636            0.511     0.011
+ all_m3dt_q75    0.828       0.738            0.576     0.076
+all_m3dt_mean    0.825       0.702            0.531     0.031
+  all_pg_mean    0.818       0.686            0.539     0.039
+ all_ptr_mean    0.814       0.569            0.540     0.040
+            f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+  all_cat_sum    0.773       0.551            0.423     0.077
+  all_tri_q25    0.734       0.504            0.423     0.077
+ all_m3dt_q75    0.828       0.738            0.576     0.076
+all_m3dt_top3    0.792       0.746            0.573     0.073
+ all_tri_bot3    0.601       0.422            0.432     0.068
+  all_cat_q25    0.717       0.482            0.433     0.067
+  all_tri_sum    0.756       0.567            0.435     0.065
+ all_cat_bot3    0.584       0.414            0.436     0.064
+ all_m3dt_fhi    0.813       0.721            0.563     0.063
+  all_pg_bot3    0.741       0.662            0.557     0.057
+
+== neg=all scheme=fwd7 n_val=6874  (top by bot AUC, then top by near-FP AUC)
+            f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+ all_sig_mean    0.851       0.667            0.552     0.052
+  all_sig_sum    0.841       0.676            0.541     0.041
+  all_sig_q75    0.833       0.657            0.543     0.043
+  all_sig_q25    0.819       0.677            0.571     0.071
+ all_ptr_mean    0.816       0.569            0.554     0.054
+all_m3dt_mean    0.813       0.723            0.560     0.060
+ all_m3dt_q75    0.811       0.751            0.591     0.091
+  all_pg_mean    0.811       0.700            0.562     0.062
+           f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+all_m3dt_q75    0.811       0.751            0.591     0.091
+ all_pg_bot3    0.740       0.691            0.583     0.083
+ all_cat_q25    0.710       0.492            0.423     0.077
+all_m3dt_fhi    0.799       0.728            0.576     0.076
+  all_pg_q25    0.799       0.712            0.574     0.074
+all_m3dt_sum    0.798       0.726            0.571     0.071
+ all_sig_fhi    0.794       0.682            0.571     0.071
+ all_sig_q25    0.819       0.677            0.571     0.071
+ all_tdt_q25    0.796       0.706            0.570     0.070
+ all_ptr_q75    0.736       0.576            0.562     0.062
+
+== neg=hard scheme=P0 n_val=9522  (top by bot AUC, then top by near-FP AUC)
+            f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+ hard_pg_mean    0.778       0.781            0.638     0.138
+ hard_tdt_sum    0.773       0.767            0.610     0.110
+  hard_pg_q75    0.773       0.781            0.650     0.150
+  hard_pg_sum    0.772       0.766            0.615     0.115
+hard_tdt_mean    0.766       0.784            0.635     0.135
+ hard_tdt_q75    0.764       0.776            0.630     0.130
+hard_m3dt_q75    0.760       0.789            0.648     0.148
+hard_m3dt_sum    0.758       0.771            0.620     0.120
+             f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+   hard_pg_q75    0.773       0.781            0.650     0.150
+ hard_m3dt_q75    0.760       0.789            0.648     0.148
+hard_m3dt_mean    0.749       0.784            0.640     0.140
+  hard_pg_mean    0.778       0.781            0.638     0.138
+ hard_tdt_mean    0.766       0.784            0.635     0.135
+  hard_tdt_q75    0.764       0.776            0.630     0.130
+   hard_pg_q25    0.752       0.768            0.630     0.130
+hard_m3dt_top3    0.713       0.765            0.621     0.121
+ hard_m3dt_sum    0.758       0.771            0.620     0.120
+ hard_m3dt_q25    0.739       0.754            0.619     0.119
+
+== neg=hard scheme=fwd7 n_val=6874  (top by bot AUC, then top by near-FP AUC)
+            f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+ hard_pg_mean    0.774       0.768            0.614     0.114
+  hard_pg_sum    0.771       0.771            0.621     0.121
+ hard_tdt_sum    0.763       0.761            0.605     0.105
+  hard_pg_q25    0.761       0.754            0.610     0.110
+hard_tdt_mean    0.756       0.766            0.608     0.108
+  hard_pg_q75    0.754       0.747            0.602     0.102
+hard_m3dt_sum    0.753       0.763            0.608     0.108
+ hard_tdt_q25    0.750       0.736            0.600     0.100
+             f  AUC_bot  AUC_TPvsFP  AUC_TPnear_vsFP  dev_near
+  hard_tdt_fhi    0.626       0.745            0.630     0.130
+hard_m3dt_mean    0.742       0.777            0.630     0.130
+   hard_pg_sum    0.771       0.771            0.621     0.121
+hard_m3dt_top3    0.710       0.767            0.618     0.118
+  hard_tdt_q75    0.742       0.768            0.617     0.117
+  hard_pg_mean    0.774       0.768            0.614     0.114
+  hard_pg_bot3    0.670       0.737            0.610     0.110
+   hard_pg_q25    0.761       0.754            0.610     0.110
+ hard_tdt_mean    0.756       0.766            0.608     0.108
+ hard_m3dt_sum    0.753       0.763            0.608     0.108

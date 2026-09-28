@@ -1,0 +1,44 @@
+android UA kinds by target
+target    0.0  1.0   All
+kind                    
+app      1574  180  1754
+browser  2736  105  2841
+All      4310  285  4595
+
+example UAs:
+['Avito/122.0 (Android 13; M2101K6G) okhttp/4.11.0', 'Mozilla/5.0 (Linux; Android 12; Redmi Note 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36', 'Mozilla/5.0 (Linux; Android 14; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36', 'Mozilla/5.0 (Linux; Android 13; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36', 'Mozilla/5.0 (Linux; Android 11; Redmi Note 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36', 'Mozilla/5.0 (Linux; Android 11; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36', 'Mozilla/5.0 (Linux; Android 13; Redmi Note 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36', 'Avito/120.0 (Android 13; SM-A125F) okhttp/4.11.0']
+
+device: 6 values with >=10 cookies in both weeks; bot-rate corr week1 vs week2 = 0.959
+day            False  True 
+device                     
+M2101K6G       0.136  0.150
+SM-A515F       0.071  0.063
+SM-A125F       0.058  0.078
+SM-G991B       0.051  0.029
+Redmi Note 11  0.038  0.032
+Pixel 6        0.037  0.021
+
+osv: 4 values with >=10 cookies in both weeks; bot-rate corr week1 vs week2 = 0.428
+day  False  True 
+osv              
+11   0.085  0.065
+13   0.075  0.062
+14   0.051  0.031
+12   0.042  0.063
+
+appv: 3 values with >=10 cookies in both weeks; bot-rate corr week1 vs week2 = 0.682
+day    False  True 
+appv               
+122.0  0.124  0.163
+120.0  0.111  0.077
+118.0  0.054  0.071
+
+UA switching within cookie (android) by target: {0.0: 1.0, 1.0: 1.0}
+
+android dt bands by target
+dt      (-1, 2]  (2, 5]  (5, 10]  ...  (30, 60]  (60, 120]  (120, 1800]
+target                            ...                                  
+0.0       0.032   0.039    0.072  ...     0.250      0.199        0.144
+1.0       0.020   0.079    0.183  ...     0.167      0.063        0.060
+
+[2 rows x 8 columns]

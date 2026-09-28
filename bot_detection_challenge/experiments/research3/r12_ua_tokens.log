@@ -1,0 +1,7 @@
+distinct values: {'device': 6, 'browser': 35, 'os': 12, 'appv': 3, 'full': 148, 'pl_dev': 18}
+device {'all': 0.595, 'android': 0.63, 'web': 0.5, 'ios': 0.5, 'TPnear_vs_pFP': 0.527}
+browser {'all': 0.593, 'android': 0.656, 'web': 0.538, 'ios': 0.455, 'TPnear_vs_pFP': 0.576}
+os {'all': 0.566, 'android': 0.536, 'web': 0.52, 'ios': 0.478, 'TPnear_vs_pFP': 0.49}
+appv {'all': 0.527, 'android': 0.617, 'web': 0.5, 'ios': 0.465, 'TPnear_vs_pFP': 0.532}
+full {'all': 0.625, 'android': 0.685, 'web': 0.564, 'ios': 0.456, 'TPnear_vs_pFP': 0.596}
+pl_dev {'all': 0.607, 'android': 0.662, 'web': 0.493, 'ios': 0.443, 'TPnear_vs_pFP': 0.528}

@@ -1,0 +1,4 @@
+E65_BI                             rep=0.8958±0.0041 [0.890,0.902] fwd7=0.8966 PR-AUC=0.8390 ROC=0.9536 {'P0': 0.898, 'P1': 0.8898, 'P2': 0.8927, 'P3': 0.8969, 'P4': 0.9017, 'fwd7': 0.8966} 327.8s
+E65_BI: avg-OOF P@R 0.9023 -> 0.9005 | TP 543 FP 60 FN 229 | FP removed 2 added 3 | TP removed 6 added 4 | persistent FP still flagged 45/45
+paired bootstrap vs B0: {'p_better': 0.255, 'diff_mean': -0.0028, 'ci95': (-0.013066892055059173, 0.00638466336198493), 'point': -0.0018}
+platform P@R (inside segment): {'web+mouse': (0.8522, 0.8529), 'web no mouse': (0.9509, 0.9526), 'android': (0.569, 0.6007), 'ios': (0.1818, 0.186)}

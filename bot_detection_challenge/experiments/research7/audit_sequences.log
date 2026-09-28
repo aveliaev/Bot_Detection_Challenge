@@ -1,0 +1,69 @@
+== quantiles per set
+set                   bot  human  test
+n_events       0.10   6.0    3.0   3.0
+               0.25  11.0    6.0   6.0
+               0.50  20.0   12.0  12.0
+               0.75  37.0   22.0  23.0
+               0.90  67.0   37.0  39.0
+n_ptr          0.10   0.0    0.0   0.0
+               0.25   0.0    0.0   0.0
+               0.50   0.0    0.0   0.0
+               0.75   5.0    7.0   7.0
+               0.90  24.0   19.0  19.2
+n_ptr_pairs    0.10   0.0    0.0   0.0
+               0.25   0.0    0.0   0.0
+               0.50   0.0    0.0   0.0
+               0.75   2.0    4.0   5.0
+               0.90  19.0   14.0  15.0
+n_ptr_triplets 0.10   0.0    0.0   0.0
+               0.25   0.0    0.0   0.0
+               0.50   0.0    0.0   0.0
+               0.75   1.0    3.0   3.0
+               0.90  16.0   11.0  11.0
+n_sessions     0.10   1.0    1.0   1.0
+               0.25   2.0    1.0   1.0
+               0.50   2.0    2.0   2.0
+               0.75   4.0    4.0   4.0
+               0.90   6.0    6.0   6.0
+
+== share of cookies with >= k events, by set
+         >=3    >=5   >=10   >=20   >=40
+set                                     
+bot    0.984  0.952  0.796  0.511  0.235
+human  0.938  0.832  0.582  0.288  0.086
+test   0.938  0.846  0.597  0.312  0.098
+== share with >= k pointer observations / valid consecutive pointer pairs, by set
+       ptr>=2  ptr>=3  ptr>=5  ptr>=10  ...  pairs>=1  pairs>=4  pairs>=9  pairs>=19
+set                                     ...                                         
+bot     0.278   0.276   0.265    0.214  ...     0.266     0.238     0.185      0.107
+human   0.360   0.344   0.300    0.203  ...     0.354     0.273     0.166      0.071
+test    0.360   0.343   0.304    0.204  ...     0.352     0.274     0.170      0.076
+
+[3 rows x 9 columns]
+
+== share of cookies with >= k events, by pl
+           >=3    >=5   >=10   >=20   >=40
+pl                                        
+android  0.939  0.837  0.589  0.294  0.085
+ios      0.940  0.837  0.589  0.315  0.095
+web      0.942  0.848  0.606  0.319  0.108
+== share with >= k pointer observations / valid consecutive pointer pairs, by pl
+         ptr>=2  ptr>=3  ptr>=5  ...  pairs>=4  pairs>=9  pairs>=19
+pl                               ...                               
+android   0.000   0.000   0.000  ...     0.000     0.000      0.000
+ios       0.000   0.000   0.000  ...     0.000     0.000      0.000
+web       0.663   0.634   0.558  ...     0.506     0.314      0.139
+
+[3 rows x 9 columns]
+
+== labelled cookies by platform x class: n, median events, median valid pointer pairs
+                  n  med_events  med_pairs  share_pairs_ge4
+pl      set                                                
+android bot     285        16.0        0.0             0.00
+        human  4310        11.0        0.0             0.00
+ios     bot      26        14.5        0.0             0.00
+        human   553        12.0        0.0             0.00
+web     bot     588        23.0        0.0             0.36
+        human  5329        12.0        4.0             0.52
+
+gap between consecutive pointer events (s): quantiles {0.1: 7.0, 0.5: 43.0, 0.9: 3071.0, 0.99: 8437.759999999995} | share <= 300 s: 0.847

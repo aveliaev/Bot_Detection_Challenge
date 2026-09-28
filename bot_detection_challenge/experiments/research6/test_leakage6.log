@@ -1,0 +1,10 @@
+ok:   transition inputs see only history (rows j<=2 unchanged when events >3 altered)
+ok:   prefix (50%) target-model features unchanged when suffix content altered
+ok:   future-task prefix inputs unchanged when suffix content altered
+ok:   aux model scoring day 8 is fitted without any day-8 cookie (garbage day-8 data -> identical predictions)
+ok:   pool_prefix(full lists) == history.pool_features
+ok:   fwd7 inner prefix OOF k=5 uses only training days (max day 4 < 5)
+ok:   fwd7 inner prefix OOF k=7 uses only training days (max day 6 < 7)
+ok:   no event outside [window_start, window_end)
+
+SUMMARY {'transition inputs see only history (rows j<=2 unchanged when events >3 altered)': 'ok', 'prefix (50%) target-model features unchanged when suffix content altered': 'ok', 'future-task prefix inputs unchanged when suffix content altered': 'ok', 'aux model scoring day 8 is fitted without any day-8 cookie (garbage day-8 data -> identical predictions)': 'ok', 'pool_prefix(full lists) == history.pool_features': 'ok', 'fwd7 inner prefix OOF k=5 uses only training days (max day 4 < 5)': 'ok', 'fwd7 inner prefix OOF k=7 uses only training days (max day 6 < 7)': 'ok', 'no event outside [window_start, window_end)': 'ok'}

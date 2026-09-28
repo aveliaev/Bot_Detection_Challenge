@@ -1,0 +1,13 @@
+ok:   P0 fold 2, wmean_rank: own-fold labels
+ok:   P0 fold 2, iliou_fit_beh: own-fold labels
+ok:   P0 fold 2, meta_lr: own-fold labels
+ok:   P0 fold 2, meta_cat2: own-fold labels
+inner rows use only days [np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6)] (fwd7 k=7 validation = days 7..13)
+ok:   fwd7 k=7, wmean_rank: validation-day labels
+ok:   fwd7 k=7, meta_lr: validation-day labels
+ok:   channels disjoint
+ok:   mouse expert sees only pointer columns []
+ok:   behavior expert sees no mouse/item/UA column []
+ok:   item expert sees no mouse/UA/timing column []
+
+SUMMARY {'P0 fold 2, wmean_rank: own-fold labels': 'ok', 'P0 fold 2, iliou_fit_beh: own-fold labels': 'ok', 'P0 fold 2, meta_lr: own-fold labels': 'ok', 'P0 fold 2, meta_cat2: own-fold labels': 'ok', 'fwd7 k=7, wmean_rank: validation-day labels': 'ok', 'fwd7 k=7, meta_lr: validation-day labels': 'ok', 'channels disjoint': 'ok', 'mouse expert sees only pointer columns': 'ok', 'behavior expert sees no mouse/item/UA column': 'ok', 'item expert sees no mouse/UA/timing column': 'ok'}

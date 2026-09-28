@@ -1,0 +1,66 @@
+trait rates: P(trait|bot), P(trait|human), lift
+             bot  human    lift
+ptr_comp   0.178  0.003  51.826
+web_noptr  0.375  0.151   2.491
+fast       0.199  0.024   8.386
+pool       0.472  0.045  10.405
+scr_ua     0.132  0.036   3.676
+young      0.448  0.194   2.316
+deep       0.300  0.049   6.159
+edge       0.149  0.010  14.468
+app        0.219  0.191   1.149
+
+trait rates by forensic group
+     ptr_comp  web_noptr  fast  pool  scr_ua  young  deep  edge   app
+grp                                                                  
+A        0.41       0.24  0.07  0.75    0.02   0.44  0.31  0.29  0.05
+B        0.24       0.33  0.10  0.62    0.10   0.44  0.20  0.25  0.19
+C        0.20       0.53  0.46  0.81    0.24   0.58  0.57  0.12  0.20
+D        0.00       0.15  0.02  0.05    0.04   0.19  0.05  0.01  0.19
+E        0.07       0.27  0.02  0.16    0.03   0.30  0.10  0.05  0.28
+d01      0.02       0.18  0.04  0.01    0.04   0.22  0.07  0.02  0.19
+
+trait correlation among WEB bots
+           ptr_comp  web_noptr  fast  pool  scr_ua  young  deep  edge  app
+ptr_comp       1.00      -0.71 -0.13  0.00   -0.05  -0.02  0.00  0.36  NaN
+web_noptr     -0.71       1.00  0.26  0.13    0.13   0.11  0.21 -0.63  NaN
+fast          -0.13       0.26  1.00  0.19    0.27   0.14  0.52 -0.20  NaN
+pool           0.00       0.13  0.19  1.00    0.05   0.08  0.15 -0.16  NaN
+scr_ua        -0.05       0.13  0.27  0.05    1.00   0.07  0.26 -0.07  NaN
+young         -0.02       0.11  0.14  0.08    0.07   1.00  0.12 -0.12  NaN
+deep           0.00       0.21  0.52  0.15    0.26   0.12  1.00 -0.17  NaN
+edge           0.36      -0.63 -0.20 -0.16   -0.07  -0.12 -0.17  1.00  NaN
+app             NaN        NaN   NaN   NaN     NaN    NaN   NaN   NaN  NaN
+
+trait correlation among WEB humans
+           ptr_comp  web_noptr  fast  pool  scr_ua  young  deep  edge  app
+ptr_comp       1.00      -0.05  0.00  0.24   -0.00   0.04  0.09  0.22  NaN
+web_noptr     -0.05       1.00 -0.05 -0.01    0.01   0.05  0.06 -0.09  NaN
+fast           0.00      -0.05  1.00 -0.00    0.01  -0.02 -0.01 -0.02  NaN
+pool           0.24      -0.01 -0.00  1.00    0.00   0.03  0.00  0.06  NaN
+scr_ua        -0.00       0.01  0.01  0.00    1.00   0.02  0.01 -0.00  NaN
+young          0.04       0.05 -0.02  0.03    0.02   1.00  0.08 -0.00  NaN
+deep           0.09       0.06 -0.01  0.00    0.01   0.08  1.00  0.03  NaN
+edge           0.22      -0.09 -0.02  0.06   -0.00  -0.00  0.03  1.00  NaN
+app             NaN        NaN   NaN   NaN     NaN    NaN   NaN   NaN  NaN
+
+trait count distribution (web)
+col_0     0    1
+k               
+0      2594   35
+1      1987  114
+2       608  142
+3       133  133
+4         7   80
+5         0   65
+6         0   19
+
+trait count by group (web)
+k       0     1    2   3   4   5   6
+grp                                 
+A       5     3   13  19   5   0   0
+B      13    39   64  59  26   4   0
+C       3     8   21  53  44  55  19
+D    2183  1698  507  98   2   0   0
+E      15    43   34  10   1   1   0
+d01   410   310  111  27   9   5   0

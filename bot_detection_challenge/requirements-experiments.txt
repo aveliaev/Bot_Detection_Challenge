@@ -1,0 +1,6 @@
+# Dependencies used by scripts under experiments/.
+-r requirements.txt
+pyarrow==25.0.1
+scipy==1.17.1
+lightgbm==4.7.0
+xgboost==3.2.0

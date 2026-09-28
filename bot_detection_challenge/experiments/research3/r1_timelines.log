@@ -1,0 +1,196 @@
+--- PERSISTENT/OP FP (target=0)  pl=web n=50 age_at_first=1.5d rank=225 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/
+  t=+      0s dt=      SRV         uslugi       chelyabins (389,439)    q="клининг" p=4
+  t=+     10s dt=   10 IV     i0   uslugi       sankt-pete (324,338)    
+  t=+     40s dt=   30 SRV         uslugi       sankt-pete (235,460)    q="клининг" p=6
+  t=+     45s dt=    5 IV     i1   uslugi       saratov    (249,296)    
+  t=+     71s dt=   26 SRV         uslugi       penza      (95,609)     q="маникюр" p=2
+  t=+     77s dt=    6 SRV         uslugi       krasnoyars (293,284)    q="репетитор математика" p=7
+  t=+     89s dt=   12 SRV         uslugi       ekaterinbu (201,321)    q="маникюр" p=5
+  t=+     95s dt=    6 SRV         uslugi       chelyabins (199,271)    q="клининг" p=16
+  t=+    101s dt=    6 IV     i2   uslugi       chelyabins (297,287)    
+  t=+    120s dt=   19 IV     i3   uslugi       kirov      (378,390)    
+  t=+    148s dt=   28 IV     i4   uslugi       novosibirs (306,384)    
+  t=+    162s dt=   14 IV     i5   uslugi       tomsk      (173,612)    
+  t=+    184s dt=   22 IV     i1   uslugi       saratov    (229,441)    
+  t=+    213s dt=   29 SRV         uslugi       nan        (387,341)    q="клининг" p=3
+  t=+    219s dt=    6 SRV         uslugi       irkutsk    (411,467)    q="клининг" p=2
+  t=+    225s dt=    6 SRV         uslugi       ekaterinbu              q="ремонт квартир" p=1
+  t=+    240s dt=   15 PS     i6   uslugi       bryansk    (163,362)    
+  t=+    241s dt=    1 SRV         uslugi       ekaterinbu (294,421)    q="клининг" p=1
+  t=+    245s dt=    4 IV     i7   uslugi       ekaterinbu (244,306)    
+  t=+    259s dt=   14 SRV         uslugi       ekaterinbu (285,341)    q="клининг" p=6
+  t=+    280s dt=   21 IV     i7   uslugi       nan        (173,390)    
+  t=+    282s dt=    2 SRV         uslugi       sankt-pete (269,299)    q="маникюр" p=5
+--- PERSISTENT/OP FP (target=0)  pl=web n=56 age_at_first=3.6d rank=444 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      SRV         kvartiry_pro ryazan     (1118,823)   q="квартира от собственника" p=4
+  t=+     18s dt=   18 IV     i0   kvartiry_pro sankt-pete (996,760)    
+  t=+     29s dt=   11 SRV         kvartiry_pro novosibirs (1055,902)   q="квартира от собственника" p=3
+  t=+     47s dt=   18 IV     i1   kvartiry_pro ivanovo    (1033,804)   
+  t=+     69s dt=   22 IV     i2   kvartiry_pro perm       (1187,804)   
+  t=+     88s dt=   19 SRV         kvartiry_pro nizhniy_no (1116,650)   q="студия купить" p=4
+  t=+    113s dt=   25 IV     i3   kvartiry_pro voronezh   (1023,849)   
+  t=+    127s dt=   14 IV     i4   kvartiry_pro ekaterinbu (1018,781)   
+  t=+    187s dt=   60 SP     i3   kvartiry_pro voronezh   (1127,775)   
+  t=+    204s dt=   17 IV     i5   kvartiry_pro bryansk    (1109,794)   
+  t=+    213s dt=    9 SRV         kvartiry_pro kirov      (1091,735)   q="квартира от собственника" p=4
+  t=+    258s dt=   45 SRV         kvartiry_pro sankt-pete (1116,854)   q="квартира от собственника" p=4
+  t=+    278s dt=   20 SRV         kvartiry_pro ryazan     (1056,670)   q="квартира от собственника" p=4
+  t=+    285s dt=    7 IV     i5   kvartiry_pro bryansk    (1138,842)   
+  t=+    321s dt=   36 IV     i6   kvartiry_pro tula       (1115,799)   
+  t=+    330s dt=    9 IV     i3   kvartiry_pro voronezh   (1046,685)   
+  t=+    357s dt=   27 SRV         kvartiry_pro voronezh   (1005,776)   q="квартира от собственника" p=3
+  t=+    385s dt=   28 SRV         kvartiry_pro chelyabins              q="квартира от собственника" p=2
+  t=+    393s dt=    8 SRV         kvartiry_pro krasnoyars              q="квартира от собственника" p=1
+  t=+    454s dt=   61 PHONE  i7   kvartiry_pro krasnoyars (1086,780)   
+  t=+    516s dt=   62 SRV         kvartiry_pro ivanovo    (1210,820)   q="квартира от собственника" p=5
+  t=+    527s dt=   11 IV     i2   kvartiry_pro perm       (1071,725)   
+--- PERSISTENT/OP FP (target=0)  pl=web n=48 age_at_first=2.3d rank=358 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      SRV         odezhda      moskva     (1198,752)   q="ботинки мужские" p=3
+  t=+     95s dt=   95 IV     i0   odezhda      novosibirs (873,726)    
+  t=+    132s dt=   37 SRV         odezhda      kirov      (1135,748)   q="ботинки мужские" p=2
+  t=+    165s dt=   33 SRV         avtomobili   ivanovo    (1097,534)   q="volkswagen polo" p=4
+  t=+    203s dt=   38 PS     i1   avtomobili   moskva     (1110,852)   
+  t=+   5962s dt= 5759 IV     i2   odezhda      novosibirs (1056,563)   
+  t=+   5976s dt=   14 IV     i3   avtomobili   novosibirs (1022,508)   
+  t=+   6021s dt=   45 IV     i4   odezhda      novosibirs (1121,690)   
+  t=+   6050s dt=   29 SRV         avtomobili   novosibirs (1084,456)   q="toyota camry" p=3
+  t=+  11400s dt= 5350 IV     i5   nan          omsk       (974,556)    
+  t=+  11412s dt=   12 IV     i6   avtomobili   novosibirs (1222,667)   
+  t=+  11423s dt=   11 SP     i7   odezhda      novosibirs (1077,546)   
+  t=+  11471s dt=   48 IV     i8   odezhda      ekaterinbu (1163,743)   
+  t=+  11534s dt=   63 IV     i9   avtomobili   voronezh   (1078,731)   
+  t=+  11637s dt=  103 SRV         avtomobili   novosibirs (997,560)    q="volkswagen polo" p=1
+  t=+  11656s dt=   19 SRV         odezhda      kirov      (1218,521)   q="ботинки мужские" p=2
+  t=+  11663s dt=    7 IV     i10  avtomobili   moskva     (983,566)    
+  t=+  11689s dt=   26 IV     i11  nan          krasnodar  (1165,707)   
+  t=+  11722s dt=   33 SRV         odezhda      novosibirs (1003,444)   q="ботинки мужские" p=1
+  t=+  11829s dt=  107 SRV         avtomobili   sankt-pete (1258,637)   q="volkswagen polo" p=7
+  t=+  11854s dt=   25 IV     i12  odezhda      ufa        (1148,448)   
+  t=+  11915s dt=   61 IV     i13  odezhda      novosibirs (1079,602)   
+--- TP near threshold  pl=web n=16 age_at_first=1.6d rank=401 ua=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l
+  t=+      0s dt=      IV     i0   zhivotnye    kaliningra (1079,908)   
+  t=+   7202s dt= 7202 IV     i1   zhivotnye    makhachkal (702,300)    
+  t=+   7218s dt=   16 PS     i2   kvartiry_are tomsk      (1520,658)   
+  t=+   7232s dt=   14 PS     i3   kvartiry_are makhachkal (706,1080)   
+  t=+   7270s dt=   38 FAV    i4   zhivotnye    makhachkal (305,863)    
+  t=+   7304s dt=   34 FAV    i5   nan          lipetsk    (1330,706)   
+  t=+   7317s dt=   13 IV     i6   kvartiry_are ekaterinbu (584,742)    
+  t=+   7376s dt=   59 IV     i7   kvartiry_are cheboksary (83,523)     
+  t=+   7413s dt=   37 PS     i8   zhivotnye    kaliningra (1131,854)   
+  t=+   7446s dt=   33 IV     i9   zhivotnye    rostov-na- (720,1080)   
+  t=+  10744s dt= 3298 IV     i10  zhivotnye    makhachkal (1599,0)     
+  t=+  10781s dt=   37 IV     i11  rabota       nan        (979,439)    
+  t=+  14187s dt= 3406 IV     i12  zhivotnye    nizhniy_no (543,1080)   
+  t=+  14245s dt=   58 IV     i13  zhivotnye    moskva     (625,332)    
+  t=+  14347s dt=  102 SRV         zhivotnye    novosibirs (1222,829)   q="корм для собак" p=3
+  t=+  14390s dt=   43 PS     i14  kvartiry_are nizhniy_no (1442,1080)  
+--- TP near threshold  pl=web n=24 age_at_first=63.7d rank=457 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      SRV         kvartiry_pro omsk                    q="квартира с ремонтом" p=2
+  t=+     21s dt=   21 PS     i0   kvartiry_pro vladivosto              
+  t=+     47s dt=   26 SRV         kvartiry_pro tula       (749,200)    q="вторичка 2к" p=6
+  t=+     58s dt=   11 SRV         kvartiry_pro ivanovo    (606,208)    q="студия купить" p=2
+  t=+    127s dt=   69 IV     i1   kvartiry_pro nizhniy_no (484,307)    
+  t=+    180s dt=   53 IV     i2   kvartiry_pro ekaterinbu (600,325)    
+  t=+    226s dt=   46 IV     i3   kvartiry_pro ufa        (857,462)    
+  t=+    261s dt=   35 LOGIN       nan          nan        (708,245)    
+  t=+    304s dt=   43 SP     i4   kvartiry_pro makhachkal (691,404)    
+  t=+    327s dt=   23 IV     i5   kvartiry_pro nan                     
+  t=+    406s dt=   79 IV     i6   kvartiry_pro ivanovo    (636,279)    
+  t=+    440s dt=   34 IV     i7   kvartiry_pro moskva     (614,381)    
+  t=+    464s dt=   24 SRV         kvartiry_pro tyumen     (764,502)    q="квартира с ремонтом" p=10
+  t=+    483s dt=   19 SRV         kvartiry_pro bryansk    (531,346)    q="квартира с ремонтом" p=1
+  t=+    509s dt=   26 IV     i2   kvartiry_pro ekaterinbu (583,428)    
+  t=+    531s dt=   22 SRV         kvartiry_pro makhachkal (454,543)    q="3к квартира" p=1
+  t=+   7563s dt= 7032 SRV         kvartiry_pro nan        (583,281)    q="квартира с ремонтом" p=4
+  t=+   7619s dt=   56 SRV         kvartiry_pro ekaterinbu (784,364)    q="квартира с ремонтом" p=11
+  t=+   7667s dt=   48 IV     i8   kvartiry_pro bryansk    (522,268)    
+  t=+   7695s dt=   28 IV     i0   kvartiry_pro vladivosto (557,548)    
+  t=+  14245s dt= 6550 SRV         kvartiry_pro ulyanovsk  (682,426)    q="апартаменты купить" p=2
+  t=+  14259s dt=   14 IV     i9   kvartiry_pro ivanovo    (794,362)    
+--- TP near threshold  pl=web n=17 age_at_first=139.5d rank=272 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      IV     i0   kvartiry_are vladivosto              
+  t=+   7126s dt= 7126 SRV         kvartiry_are samara                  q="квартира посуточно" p=1
+  t=+   7136s dt=   10 SP     i1   kvartiry_are samara                  
+  t=+   7145s dt=    9 IV     i2   kvartiry_are yaroslavl               
+  t=+   7159s dt=   14 SRV         kvartiry_are sankt-pete              q="квартира посуточно" p=15
+  t=+   7166s dt=    7 SP     i3   telefony     krasnodar               
+  t=+   7172s dt=    6 IV     i4   uslugi       novosibirs              
+  t=+   7181s dt=    9 SRV         nan          yaroslavl               q="снять 1к квартиру" p=17
+  t=+   7188s dt=    7 SP     i5   kvartiry_are sankt-pete              
+  t=+   7208s dt=   20 SRV         telefony     ufa                     q="honor x9" p=27
+  t=+   7215s dt=    7 IV     i6   kvartiry_are tula                    
+  t=+   7235s dt=   20 IV     i7   kvartiry_are novosibirs              
+  t=+   7255s dt=   20 SRV         uslugi       tula                    q="грузоперевозки" p=10
+  t=+   7266s dt=   11 IV     i8   kvartiry_are makhachkal              
+  t=+   7273s dt=    7 PS     i9   kvartiry_are izhevsk                 
+  t=+   7288s dt=   15 IV     i10  kvartiry_are tula                    
+  t=+   7298s dt=   10 SRV         kvartiry_are novosibirs              q="квартира посуточно" p=4
+--- easy TP  pl=web n=60 age_at_first=154.5d rank=96 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      PS     i0   rabota       ulyanovsk               
+  t=+     16s dt=   16 SRV         rabota       moskva                  q="работа курьером" p=4
+  t=+     23s dt=    7 SRV         zapchasti    moskva                  q="диски r16" p=12
+  t=+     28s dt=    5 PS     i1   avtomobili   sankt-pete              
+  t=+     41s dt=   13 CHAT   i2   zapchasti    saratov                 
+  t=+     55s dt=   14 PS     i3   rabota       ulyanovsk               
+  t=+     68s dt=   13 SP     i4   zapchasti    kirov                   
+  t=+     86s dt=   18 IV     i5   avtomobili   ulyanovsk               
+  t=+     94s dt=    8 PS     i6   zapchasti    ivanovo                 
+  t=+     96s dt=    2 SRV         avtomobili   orenburg                q="volkswagen polo" p=4
+  t=+    108s dt=   12 IV     i7   avtomobili   moskva                  
+  t=+    116s dt=    8 SRV         avtomobili   sankt-pete              q="hyundai solaris" p=3
+  t=+    129s dt=   13 IV     i8   avtomobili   ulyanovsk               
+  t=+    139s dt=   10 IV     i9   avtomobili   cheboksary              
+  t=+   1530s dt= 1391 IV     i10  avtomobili   novosibirs              
+  t=+   1543s dt=   13 SRV         avtomobili   orenburg                q="kia rio 2019" p=5
+  t=+   1548s dt=    5 SRV         avtomobili   sankt-pete              q="лада гранта" p=2
+  t=+   1561s dt=   13 IV     i11  nan          ekaterinbu              
+  t=+   1570s dt=    9 SRV         rabota       ulyanovsk               q="вакансия продавец" p=3
+  t=+   1585s dt=   15 IV     i10  avtomobili   novosibirs              
+  t=+   1594s dt=    9 PS     i12  avtomobili   novosibirs              
+  t=+   1607s dt=   13 SRV         avtomobili   novosibirs              q="skoda octavia" p=34
+--- easy TP  pl=web n=52 age_at_first=1.6d rank=73 ua=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l
+  t=+      0s dt=      IV     i0   nan          moskva     (754,507)    
+  t=+      9s dt=    9 SRV         odezhda      sankt-pete (816,157)    q="костюм мужской" p=6
+  t=+     14s dt=    5 IV     i1   odezhda      moskva     (797,426)    
+  t=+     20s dt=    6 IV     i2   odezhda      irkutsk    (905,351)    
+  t=+     27s dt=    7 IV     i3   odezhda      ulyanovsk  (639,607)    
+  t=+     39s dt=   12 PS     i4   odezhda      ryazan     (834,549)    
+  t=+     67s dt=   28 SRV         odezhda      novosibirs (719,293)    q="куртка зимняя" p=7
+  t=+     88s dt=   21 SRV         odezhda      orenburg   (607,158)    q="костюм мужской" p=1
+  t=+     96s dt=    8 PS     i5   odezhda      irkutsk    (668,208)    
+  t=+    113s dt=   17 CHAT   i6   odezhda      sankt-pete (823,353)    
+  t=+    122s dt=    9 SP     i7   odezhda      habarovsk  (836,221)    
+  t=+    139s dt=   17 SRV         odezhda      nan        (906,301)    q="костюм мужской" p=2
+  t=+    146s dt=    7 SRV         odezhda      ulyanovsk  (848,536)    q="куртка зимняя" p=1
+  t=+    150s dt=    4 IV     i3   odezhda      ulyanovsk  (566,294)    
+  t=+    166s dt=   16 SRV         odezhda      sankt-pete (775,294)    q="костюм мужской" p=5
+  t=+    179s dt=   13 SRV         odezhda      moskva     (433,373)    q="костюм мужской" p=3
+  t=+    196s dt=   17 IV     i8   odezhda      moskva     (547,256)    
+  t=+    215s dt=   19 IV     i9   odezhda      moskva     (570,90)     
+  t=+    233s dt=   18 SRV         odezhda      moskva     (562,332)    q="костюм мужской" p=1
+  t=+    244s dt=   11 IV     i0   odezhda      moskva     (831,339)    
+  t=+   8171s dt= 7927 IV     i10  odezhda      nan        (674,478)    
+  t=+   8181s dt=   10 IV     i11  odezhda      ulyanovsk  (573,395)    
+--- easy TP  pl=web n=57 age_at_first=0.9d rank=143 ua=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  t=+      0s dt=      SRV         noutbuki     novosibirs              q="ноутбук игровой" p=6
+  t=+      3s dt=    3 IV     i0   noutbuki     ivanovo                 
+  t=+     10s dt=    7 FAV    i1   noutbuki     novosibirs              
+  t=+     13s dt=    3 SRV         noutbuki     novosibirs              q="ноутбук для учебы" p=1
+  t=+     19s dt=    6 IV     i2   noutbuki     novosibirs              
+  t=+     25s dt=    6 SRV         noutbuki     novosibirs              q="ноутбук игровой" p=17
+  t=+     31s dt=    6 SRV         noutbuki     ekaterinbu              q="ноутбук игровой" p=2
+  t=+     40s dt=    9 PS     i3   noutbuki     novosibirs              
+  t=+   8745s dt= 8705 IV     i4   noutbuki     novosibirs              
+  t=+   8750s dt=    5 IV     i5   noutbuki     ufa                     
+  t=+   8757s dt=    7 SRV         noutbuki     ivanovo                 q="asus rog" p=2
+  t=+  10256s dt= 1499 SRV         noutbuki     barnaul                 q="macbook air m1" p=7
+  t=+  17109s dt= 6853 SRV         noutbuki     nan                     q="ноутбук для учебы" p=9
+  t=+  17113s dt=    4 SRV         noutbuki     novosibirs              q="dell xps" p=3
+  t=+  17117s dt=    4 IV     i6   noutbuki     barnaul                 
+  t=+  17125s dt=    8 IV     i7   noutbuki     novosibirs              
+  t=+  17128s dt=    3 SRV         noutbuki     novosibirs              q="lenovo thinkpad" p=1
+  t=+  17134s dt=    6 IV     i8   nan          ryazan                  
+  t=+  17144s dt=   10 IV     i9   noutbuki     nizhniy_no              
+  t=+  17150s dt=    6 IV     i1   noutbuki     novosibirs              
+  t=+  17158s dt=    8 MSG    i10  noutbuki     tolyatti                
+  t=+  17164s dt=    6 PS     i11  noutbuki     volgograd               

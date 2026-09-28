@@ -1,0 +1,80 @@
+== NESTED local reranking vs frozen B0 (per outer split)
+         PR_B0  PR_new   TP  FP   FN  FP_removed  FP_added  TP_removed  TP_added  net_FP  net_TP  pFP_flagged_B0  pFP_flagged_new
+scheme                                                                                                                           
+P0      0.8974  0.8946  543  64  229           4         6          11        12       2       1              45               44
+P1      0.8975  0.8903  544  67  228           0         5           7         8       5       1              45               45
+P2      0.9068  0.9016  550  60  222           0         4           7        12       4       5              45               45
+P3      0.8990  0.8871  542  69  230           0         8          18        17       8      -1              45               45
+P4      0.9007  0.8929  542  65  230           3         8          12        10       5      -2              45               44
+fwd7    0.9023  0.8986  390  44  164           8        10           9        11       2       2              30               29
+
+repeated CV: B0 0.9003 -> nested 0.8933 (delta -0.0070); fwd7: 0.9023 -> 0.8986 (delta -0.0037); splits improved 0/5, worse 5/5
+
+== configs chosen by inner CV (per outer fold)
+scheme  fold                            chosen  strength  inner_base  inner_best
+    P0     0                         ('none',)      0.00      0.9014      0.9014
+    P0     1         ('pair', 'top5-12%', 0.1)      0.01      0.9068      0.9089
+    P0     2        ('pair', 'top5-12%', 0.05)      0.01      0.8926      0.8943
+    P0     3          ('pair', 'top4-9%', 0.1)      0.02      0.8834      0.8863
+    P0     4        ('pair', 'top5-12%', 0.05)      0.01      0.8970      0.8990
+    P0     5         ('pair', 'top5-12%', 0.1)      0.01      0.9021      0.9049
+    P1     0 ('local_lr', 'rank400-800', 0.02)      0.05      0.8849      0.8944
+    P1     1      ('local_lr', 'top4-9%', 0.1)      0.01      0.8994      0.9028
+    P1     2                         ('none',)      0.00      0.8963      0.8963
+    P1     3    ('local_lr', 'top5-10%', 0.02)      0.02      0.8970      0.8998
+    P1     4    ('local_lr', 'top5-10%', 0.02)      0.02      0.8956      0.8978
+    P1     5    ('local_lr', 'top5-10%', 0.02)      0.02      0.9130      0.9150
+    P2     0     ('local_lr', 'top4-9%', 0.05)      0.01      0.9052      0.9058
+    P2     1                         ('none',)      0.00      0.9213      0.9213
+    P2     2 ('local_lr', 'rank300-800', 0.02)      0.05      0.9080      0.9093
+    P2     3    ('local_lr', 'top5-10%', 0.02)      0.02      0.9008      0.9012
+    P2     4     ('local_lr', 'top4-9%', 0.02)      0.02      0.9020      0.9044
+    P2     5 ('local_lr', 'rank300-800', 0.02)      0.05      0.9023      0.9059
+    P3     0    ('local_lr', 'top5-10%', 0.02)      0.02      0.9130      0.9134
+    P3     1         ('pair', 'top5-12%', 0.1)      0.01      0.8996      0.9006
+    P3     2     ('local_lr', 'top4-9%', 0.05)      0.01      0.9018      0.9036
+    P3     3     ('local_lr', 'top4-9%', 0.05)      0.01      0.8978      0.9029
+    P3     4 ('local_lr', 'rank400-800', 0.05)      0.02      0.8904      0.8990
+    P3     5 ('local_lr', 'rank300-800', 0.02)      0.05      0.8929      0.8931
+    P4     0         ('pair', 'top5-12%', 0.1)      0.01      0.9091      0.9094
+    P4     1     ('pair', 'rank400-800', 0.05)      0.02      0.9085      0.9127
+    P4     2         ('pair', 'top5-10%', 0.1)      0.01      0.8934      0.8967
+    P4     3        ('pair', 'top5-10%', 0.05)      0.01      0.9012      0.9068
+    P4     4          ('pair', 'top4-9%', 0.1)      0.01      0.8998      0.9060
+    P4     5         ('pair', 'top5-10%', 0.1)      0.01      0.8936      0.8953
+  fwd7     5 ('local_lr', 'rank300-800', 0.05)      0.05      0.8743      0.8902
+  fwd7     7    ('pair_sub', 'top5-12%', 0.02)      0.01      0.8707      0.8947
+
+method chosen (count of outer folds): {'local_lr': 16, 'pair': 12, 'none': 3, 'pair_sub': 1}
+
+== averaged repeated OOF (days>=2), nested procedure
+{'PR_B0': 0.902317880794702, 'PR_new': 0.8968903436988543, 'TP': 548, 'FP': 63, 'FN': 224, 'FP_removed': 0, 'FP_added': 4, 'TP_removed': 5, 'TP_added': 8, 'net_FP': 4, 'net_TP': 3, 'pFP_flagged_B0': 45, 'pFP_flagged_new': 45}
+
+== fixed-config grid (649 configs; post-hoc, NOT used for selection)
+configs with d_rep >= +0.01 AND d_fwd7 >= +0.01 AND >=4/5 splits up: 0
+configs with rep >= 0.910 AND fwd7 >= 0.910: 0
+distribution of d_rep: {'count': 649.0, 'mean': -0.0128, 'std': 0.0268, 'min': -0.1308, '25%': -0.0127, '50%': 0.0, '75%': 0.0, 'max': 0.0002}
+distribution of d_fwd7: {'count': 649.0, 'mean': -0.0139, 'std': 0.0274, 'min': -0.1834, '25%': -0.0083, '50%': -0.0053, '75%': 0.0, 'max': 0.0}
+
+best 12 by d_rep (optimistic, selected on outer folds!):
+method                              cfg  strength    rep  fwd7  d_rep  d_fwd7  splits_up
+  rule ('rank400-800', 0.95, 0.95, 0.2)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule  ('rank400-800', 0.9, 0.95, 0.3)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule     ('top5-12%', 0.9, 0.95, 0.4)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule    ('top5-10%', 0.95, 0.95, 0.2)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule    ('top5-10%', 0.95, 0.95, 0.3)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule    ('top5-12%', 0.95, 0.95, 0.4)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule     ('top4-9%', 0.95, 0.95, 0.4)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule    ('top5-12%', 0.95, 0.95, 0.3)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule  ('rank300-800', 0.9, 0.95, 0.2)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule ('rank300-800', 0.95, 0.95, 0.2)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule      ('top4-9%', 0.9, 0.95, 0.4)      30.0 0.9005 0.897 0.0002 -0.0053          1
+  rule    ('top5-10%', 0.95, 0.95, 0.4)      30.0 0.9005 0.897 0.0002 -0.0053          1
+
+best per method by d_rep (optimistic):
+  method                              cfg  strength    rep   fwd7   d_rep  d_fwd7  splits_up
+    rule ('rank400-800', 0.95, 0.95, 0.2)     30.00 0.9005 0.8970  0.0002 -0.0053          1
+    none                               ()      0.00 0.9003 0.9023  0.0000  0.0000          0
+local_lr                ('top4-9%', 0.02)      0.01 0.8996 0.9023 -0.0006  0.0000          0
+    pair                ('top5-10%', 0.1)      0.01 0.8963 0.8758 -0.0040 -0.0265          1
+pair_sub               ('top5-12%', 0.05)      0.01 0.8928 0.8838 -0.0074 -0.0185          1

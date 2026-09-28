@@ -1,0 +1,36 @@
+      feature  AUC_bot_vs_human  AUC_TP_vs_FP  AUC_TPnear_vs_FP
+  all_knn_pos             0.363         0.508             0.574
+  all_knn_neg             0.711         0.613             0.533
+   all_knn_lr             0.095         0.382             0.545
+  all_iso_pos             0.490         0.383             0.424
+  all_gmm_pos             0.582         0.422             0.403
+  all_gmm_neg             0.284         0.399             0.476
+   all_gmm_lr             0.855         0.554             0.453
+ all_maha_pos             0.350         0.595             0.609
+all_proto_min             0.400         0.529             0.557
+all_proto_2nd             0.543         0.608             0.559
+all_proto_gap             0.689         0.585             0.516
+        feature  AUC_bot_vs_human  AUC_TP_vs_FP  AUC_TPnear_vs_FP
+  behav_knn_pos             0.326         0.519             0.599
+  behav_knn_neg             0.634         0.674             0.582
+   behav_knn_lr             0.110         0.335             0.528
+  behav_iso_pos             0.528         0.369             0.421
+  behav_gmm_pos             0.661         0.434             0.406
+  behav_gmm_neg             0.333         0.322             0.440
+   behav_gmm_lr             0.864         0.633             0.474
+ behav_maha_pos             0.355         0.568             0.596
+behav_proto_min             0.356         0.548             0.576
+behav_proto_2nd             0.503         0.641             0.552
+behav_proto_gap             0.674         0.615             0.496
+           feature  AUC_bot_vs_human  AUC_TP_vs_FP  AUC_TPnear_vs_FP
+  ptr_time_knn_pos             0.386         0.417             0.475
+  ptr_time_knn_neg             0.662         0.493             0.464
+   ptr_time_knn_lr             0.112         0.387             0.540
+  ptr_time_iso_pos             0.462         0.515             0.541
+  ptr_time_gmm_pos             0.515         0.520             0.531
+  ptr_time_gmm_neg             0.301         0.505             0.542
+   ptr_time_gmm_lr             0.849         0.528             0.463
+ ptr_time_maha_pos             0.454         0.463             0.444
+ptr_time_proto_min             0.522         0.477             0.454
+ptr_time_proto_2nd             0.548         0.471             0.455
+ptr_time_proto_gap             0.553         0.492             0.533

@@ -1,0 +1,6 @@
+negatives by share of 20 runs: {Interval(-0.01, 0.0, closed='right'): 8650, Interval(0.0, 0.25, closed='right'): 27, Interval(0.25, 0.5, closed='right'): 10, Interval(0.5, 0.75, closed='right'): 11, Interval(0.75, 0.99, closed='right'): 7, Interval(0.99, 1.0, closed='right'): 45}
+positives by share: {Interval(-0.01, 0.0, closed='right'): 185, Interval(0.0, 0.25, closed='right'): 24, Interval(0.25, 0.5, closed='right'): 21, Interval(0.5, 0.75, closed='right'): 41, Interval(0.75, 0.99, closed='right'): 38, Interval(0.99, 1.0, closed='right'): 463}
+persistent FP 45 persistent FN 185 always TP 463
+overlap persistent FP with op-point FP: 45
+hypothetical P@R if persistent FP were positives (analysis only): 0.9847 vs 0.9023
+persistent FP platform {'web': 38, 'android': 7}  ptr_comp share 0.51  pool share 0.78

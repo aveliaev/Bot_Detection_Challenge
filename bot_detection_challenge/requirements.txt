@@ -1,0 +1,5 @@
+# Runtime dependencies for the final solution.py (Python 3.11.15)
+numpy==2.4.6
+pandas==3.0.6
+scikit-learn==1.9.1
+catboost==1.2.10

@@ -1,0 +1,64 @@
+mean family SHAP (log-odds contribution) by group
+                 TP_rank300-604  TP_top300  other  persistentFP
+activity/events            0.84       2.07  -0.10          0.76
+cookie_age                 0.08       0.11  -0.01          0.07
+items/diversity            0.79       1.10  -0.06          1.11
+pointer                    1.76       1.25  -0.10          2.11
+pool                       1.73       2.23  -0.09          2.46
+search                     0.13       0.52  -0.02          0.16
+time_of_day               -0.00      -0.03   0.00         -0.04
+timing                     1.33       2.99  -0.13          0.98
+ua/platform                0.07       0.18  -0.01         -0.01
+
+FP reason clusters k=2: sizes [33 12]
+                    0     1
+activity/events  0.92  0.31
+cookie_age       0.09  0.02
+items/diversity  1.18  0.94
+pointer          1.09  4.93
+pool             3.02  0.93
+search           0.19  0.06
+time_of_day     -0.03 -0.05
+timing           1.14  0.51
+ua/platform     -0.03  0.04
+
+FP reason clusters k=3: sizes [21 10 14]
+                    0     1     2
+activity/events  0.62  0.30  1.29
+cookie_age       0.10  0.01  0.08
+items/diversity  1.14  0.79  1.31
+pointer          1.12  5.42  1.25
+pool             3.71  1.12  1.55
+search           0.11 -0.01  0.35
+time_of_day     -0.05 -0.05 -0.00
+timing           0.69  0.23  1.94
+ua/platform     -0.05  0.04  0.02
+
+FP reason clusters k=4: sizes [10 16 14  5]
+                    0     1     2     3
+activity/events  0.30  0.34  1.53  0.87
+cookie_age       0.01  0.11  0.07  0.08
+items/diversity  0.79  1.18  1.09  1.64
+pointer          5.42  1.23  0.90  1.74
+pool             1.12  3.70  2.85  0.11
+search          -0.01  0.11  0.24  0.43
+time_of_day     -0.05 -0.08  0.00  0.03
+timing           0.23  0.44  1.70  2.16
+ua/platform      0.04 -0.01 -0.03 -0.04
+
+top individual SHAP features pushing persistent FP up
+pool_nb_ge1_frac       0.816
+ptr_exact_edge_frac    0.813
+pool_nb_ge1_cnt        0.628
+pool_llr_sum           0.399
+pool_rate_mean         0.398
+ptr_box_frac           0.322
+sdt_q90                0.238
+ptr_zero_frac          0.207
+ptr_x_std              0.181
+loc_ent                0.171
+pool_llr_mean          0.151
+cat_ent                0.135
+sess_rate              0.127
+item_ent               0.121
+ptr_x_max              0.120

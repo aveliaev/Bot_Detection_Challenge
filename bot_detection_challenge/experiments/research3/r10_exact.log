@@ -1,0 +1,37 @@
+
+== dt4: exact 4-gram sharing across cookies
+       frac_shared_any  frac_shared_with_other_bot       n
+bot             0.1720                      0.1428   22887
+human           0.0025                      0.0010  138578
+pFP             0.0126                      0.0063    1109
+test            0.0339                      0.0275   73699
+
+== dt3: exact 3-gram sharing across cookies
+       frac_shared_any  frac_shared_with_other_bot       n
+bot             0.4735                      0.3264   22939
+human           0.1112                      0.0259  148089
+pFP             0.2782                      0.0927    1154
+test            0.1717                      0.0737   77783
+
+== ev6: exact 6-gram sharing across cookies
+       frac_shared_any  frac_shared_with_other_bot       n
+bot             0.9679                      0.8015   20376
+human           0.9166                      0.5821  120507
+pFP             0.9908                      0.9026     975
+test            0.9251                      0.6249   64418
+
+== xy: exact 1-gram sharing across cookies
+       frac_shared_any  frac_shared_with_other_bot      n
+bot             0.0598                      0.0162   7209
+human           0.0385                      0.0026  66335
+pFP             0.0585                      0.0195    718
+test            0.0430                      0.0043  32957
+
+== week1 vs week2 pattern LLR correlation (support-weighted)
+  tdt   patterns=   444 with support>=10:   395  corr=0.506
+  tri   patterns=   445 with support>=10:   383  corr=0.496
+  ptr   patterns=   168 with support>=10:   165  corr=0.804
+  cat   patterns=   112 with support>=10:   108  corr=0.529
+  pg    patterns=   119 with support>=10:   114  corr=0.958
+  sig   patterns=  5810 with support>=10:  1300  corr=0.644
+  m3dt  patterns= 10518 with support>=10:  1860  corr=0.557

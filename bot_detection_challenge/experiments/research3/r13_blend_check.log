@@ -1,0 +1,9 @@
+B0 rep-avg 0.9023 fwd7 0.9023
+B0*0.7+E11_hier*0.3: rep-avg 0.9038 fwd7 0.8922 P(better)=0.46
+B0*0.5+E11_hier*0.5: rep-avg 0.8992 fwd7 0.8940 P(better)=0.23
+B0*0.7+E5_llrhard*0.3: rep-avg 0.9038 fwd7 0.8981 P(better)=0.60
+B0*0.5+E5_llrhard*0.5: rep-avg 0.9005 fwd7 0.8943 P(better)=0.47
+B0*0.7+E5_llrall*0.3: rep-avg 0.9050 fwd7 0.8984 P(better)=0.53
+B0*0.5+E5_llrall*0.5: rep-avg 0.9003 fwd7 0.8934 P(better)=0.40
+B0*0.7+E11_multi4*0.3: rep-avg 0.9062 fwd7 0.8989 P(better)=0.81
+B0*0.5+E11_multi4*0.5: rep-avg 0.9062 fwd7 0.9009 P(better)=0.71

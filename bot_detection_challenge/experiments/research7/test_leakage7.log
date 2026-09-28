@@ -1,0 +1,10 @@
+ok:   no cookie (and none of its windows) on both sides of any of the 32 folds
+ok:   inner window models: scored day-group never in the fitting day-groups
+ok:   neural early-stopping days are training days of the outer fold
+ok:   event tokens are causal (rows <= j unchanged when events > j altered)
+ok:   window features depend only on events inside the window
+ok:   all events inside [window_start, window_end)
+info: cookies (>=5 events) whose exact type+Δt sequence also occurs in another cookie: 0 of 13489
+adversarial AUC train-vs-test, 14 locked cheap chunk features: 0.506
+
+SUMMARY {'no cookie (and none of its windows) on both sides of any of the 32 folds': 'ok', 'inner window models: scored day-group never in the fitting day-groups': 'ok', 'neural early-stopping days are training days of the outer fold': 'ok', 'event tokens are causal (rows <= j unchanged when events > j altered)': 'ok', 'window features depend only on events inside the window': 'ok', 'all events inside [window_start, window_end)': 'ok'}

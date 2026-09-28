@@ -1,0 +1,189 @@
+== 1-3. expert performance (averaged repeated OOF, days>=2)
+  expert  PR_all  ROC_all  coverage  ROC_available  PR_web  PR_android  PR_ios
+      B0  0.9023   0.9556    1.0000         0.9556  0.9042      0.5690  0.1818
+   mouse  0.0811   0.5046    0.3634         0.9736  0.8269         NaN     NaN
+behavior  0.4755   0.8889    1.0000         0.8889  0.6679      0.2788  0.1270
+    item  0.3670   0.8638    1.0000         0.8638  0.5063      0.2206  0.0885
+ context  0.1358   0.6962    1.0000         0.6962  0.1551      0.1042  0.0487
+
+== 4. Spearman correlation of expert OOF scores (all rows / mouse-available rows / positives only)
+-- all
+             B0  mouse  behavior   item  context
+B0        1.000  0.414     0.625  0.434    0.173
+mouse     0.414  1.000     0.223  0.192    0.023
+behavior  0.625  0.223     1.000  0.278    0.101
+item      0.434  0.192     0.278  1.000    0.078
+context   0.173  0.023     0.101  0.078    1.000
+-- mouse available
+             B0  mouse  behavior   item  context
+B0        1.000  0.414     0.633  0.365    0.028
+mouse     0.414  1.000     0.223  0.192    0.023
+behavior  0.633  0.223     1.000  0.218    0.022
+item      0.365  0.192     0.218  1.000    0.016
+context   0.028  0.023     0.022  0.016    1.000
+-- bots only, mouse avail
+             B0  mouse  behavior   item  context
+B0        1.000  0.488     0.721  0.496    0.278
+mouse     0.488  1.000     0.162  0.238    0.128
+behavior  0.721  0.162     1.000  0.396    0.291
+item      0.496  0.238     0.396  1.000    0.122
+context   0.278  0.128     0.291  0.122    1.000
+-- humans only, mouse avail
+             B0  mouse  behavior   item  context
+B0        1.000  0.296     0.591  0.274   -0.000
+mouse     0.296  1.000     0.112  0.074   -0.004
+behavior  0.591  0.112     1.000  0.127   -0.010
+item      0.274  0.074     0.127  1.000   -0.008
+context  -0.000 -0.004    -0.010 -0.008    1.000
+
+groups: {'TN': 8691, 'TP_top604': 290, 'TPnear': 255, 'FN': 227, 'pFP': 45, 'FP_other': 14}
+
+== 5. persistent FP: averaged OOF probability of each expert (sorted by B0)
+           B0  mouse  behavior   item  context  target  mouse_avail platform
+pFP_00  0.998  0.983     0.992  0.816    0.051       0            1      web
+pFP_01  0.994    NaN     0.773  0.987    0.224       0            0      web
+pFP_02  0.988  0.957     0.968  0.947    0.035       0            1      web
+pFP_03  0.986  0.978     0.867  0.989    0.074       0            1      web
+pFP_04  0.982  0.996     0.111  0.003    0.019       0            1      web
+pFP_05  0.982    NaN     0.520  0.961    0.081       0            0  android
+pFP_06  0.980  0.993     0.055  0.066    0.054       0            1      web
+pFP_07  0.978  0.991     0.847  0.950    0.002       0            1      web
+pFP_08  0.973  0.978     0.606  0.968    0.029       0            1      web
+pFP_09  0.966  0.996     0.286  0.988    0.015       0            1      web
+pFP_10  0.963  0.976     0.399  0.959    0.048       0            1      web
+pFP_11  0.958    NaN     0.240  0.980    0.022       0            0  android
+pFP_12  0.953  0.949     0.405  0.849    0.132       0            1      web
+pFP_13  0.941  0.971     0.214  0.992    0.110       0            1      web
+pFP_14  0.941    NaN     0.319  0.992    0.011       0            0  android
+pFP_15  0.935  0.969     0.028  0.052    0.011       0            1      web
+pFP_16  0.924    NaN     0.640  0.916    0.189       0            0      web
+pFP_17  0.923    NaN     0.374  0.907    0.237       0            0      web
+pFP_18  0.923  0.985     0.076  0.925    0.025       0            1      web
+pFP_19  0.916  0.947     0.081  0.981    0.159       0            1      web
+pFP_20  0.910    NaN     0.741  0.987    0.141       0            0      web
+pFP_21  0.910  0.767     0.063  0.867    0.112       0            1      web
+pFP_22  0.907  0.951     0.525  0.981    0.038       0            1      web
+pFP_23  0.904    NaN     0.520  0.995    0.020       0            0  android
+pFP_24  0.902  0.569     0.080  0.979    0.055       0            1      web
+pFP_25  0.899    NaN     0.169  0.952    0.075       0            0  android
+pFP_26  0.897  0.898     0.070  0.985    0.046       0            1      web
+pFP_27  0.896    NaN     0.876  0.631    0.126       0            0      web
+pFP_28  0.883    NaN     0.107  0.990    0.079       0            0      web
+pFP_29  0.868  0.980     0.883  0.114    0.057       0            1      web
+pFP_30  0.863  0.946     0.053  0.786    0.017       0            1      web
+pFP_31  0.857  0.984     0.043  0.962    0.039       0            1      web
+pFP_32  0.852    NaN     0.304  0.847    0.011       0            0      web
+pFP_33  0.844    NaN     0.209  0.975    0.028       0            0  android
+pFP_34  0.840  0.968     0.252  0.930    0.107       0            1      web
+pFP_35  0.839    NaN     0.119  0.922    0.008       0            0      web
+pFP_36  0.836    NaN     0.075  0.950    0.205       0            0      web
+pFP_37  0.833  0.955     0.056  0.938    0.041       0            1      web
+pFP_38  0.823  0.891     0.022  0.052    0.124       0            1      web
+pFP_39  0.818    NaN     0.368  0.552    0.154       0            0      web
+pFP_40  0.780  0.953     0.918  0.320    0.071       0            1      web
+pFP_41  0.759    NaN     0.668  0.659    0.056       0            0      web
+pFP_42  0.750  0.977     0.190  0.850    0.036       0            1      web
+pFP_43  0.717    NaN     0.240  0.549    0.087       0            0  android
+pFP_44  0.714    NaN     0.885  0.017    0.012       0            0      web
+
+== 6. medians by group (probability | rank percentile)
+               FN  FP_other     TN  TP_top604  TPnear    pFP
+B0_p        0.070     0.625  0.004      0.996   0.854  0.907
+mouse_p     0.345     0.952  0.000      0.959   0.915  0.970
+behavior_p  0.047     0.041  0.014      0.985   0.348  0.286
+item_p      0.033     0.705  0.015      0.923   0.620  0.938
+context_p   0.075     0.045  0.048      0.150   0.094  0.054
+B0_r        0.886     0.941  0.460      0.985   0.952  0.957
+mouse_r     0.934     0.974  0.463      0.974   0.962  0.977
+behavior_r  0.789     0.775  0.458      0.984   0.946  0.940
+item_r      0.691     0.959  0.465      0.976   0.956  0.977
+context_r   0.663     0.438  0.472      0.850   0.716  0.509
+
+matched pairs (each pFP vs TP with the closest B0 score): medians
+                      B0  mouse  behavior   item  context
+FP median          0.907  0.970     0.286  0.938    0.054
+matched TP median  0.972  0.290     0.750  0.379    0.144
+P(TP>FP)           0.956  0.022     0.867  0.200    0.867
+
+== 7. disagreement features: AUC for TPnear (=1) vs pFP (=0) and TP_top604 vs pFP
+scale                    prob             rank       
+ref                 TP_top604 TPnear TP_top604 TPnear
+feature                                              
+B0                      0.956  0.338     0.956  0.334
+behavior                0.901  0.496     0.901  0.496
+behavior*item           0.798  0.332     0.781  0.315
+behavior-item           0.825  0.626     0.809  0.592
+context                 0.794  0.646     0.796  0.645
+count>0.5               0.566  0.321     0.339  0.382
+count>0.7               0.595  0.332     0.361  0.351
+count>0.8               0.586  0.313     0.404  0.347
+count>0.9               0.605  0.304     0.492  0.349
+item                    0.468  0.285     0.469  0.283
+max                     0.691  0.290     0.632  0.295
+mean                    0.770  0.277     0.759  0.291
+median                  0.668  0.267     0.687  0.250
+min                     0.790  0.344     0.779  0.336
+mouse                   0.441  0.286     0.443  0.289
+mouse*behavior          0.762  0.386     0.735  0.365
+mouse*behavior*item     0.655  0.290     0.636  0.283
+mouse*item              0.379  0.242     0.416  0.236
+mouse-behavior          0.180  0.479     0.165  0.511
+mouse-item              0.545  0.593     0.549  0.602
+std                     0.239  0.549     0.261  0.621
+
+max |AUC-0.5|+0.5 over all disagreement features, TPnear vs pFP: 0.764
+
+== 9. regime analysis (mouse-available rows). Levels: H = top 10% of the expert, M = 75-90th pct, L = below 75th
+                        n  bots  P_bot  pFP  TPnear  B0_flagged
+mouse item behavior                                            
+L     L    L         1845     0  0.000    0       0           0
+           M          274     3  0.011    0       0           0
+           H           65     0  0.000    0       0           0
+      M    L          300     2  0.007    0       0           0
+           M           59     0  0.000    0       0           0
+           H           26     0  0.000    0       0           0
+      H    L           55     0  0.000    0       0           0
+           M           20     0  0.000    0       0           0
+           H            6     0  0.000    0       0           0
+M     L    L          324     4  0.012    0       0           0
+           M           48     0  0.000    0       0           0
+           H           17     1  0.059    0       0           0
+      M    L           43     2  0.047    0       0           0
+           M            9     0  0.000    0       0           0
+      H    L           20     1  0.050    0       0           0
+H     L    L           91    20  0.220    0       9          10
+           M           16     8  0.500    1       5           6
+           H           19    15  0.789    0      10          14
+      M    L           22     7  0.318    2       4           9
+           M           12     8  0.667    1       3           5
+           H           26    24  0.923    1      14          22
+      H    L           25    17  0.680    0      14          17
+           M           30    18  0.600    8      15          25
+           H           99    85  0.859   13      30          97
+mouse=H item=H behavior=L: n=25 P(bot)=0.680 pFP=0 TPnear=14
+mouse=H item=H behavior=M: n=30 P(bot)=0.600 pFP=8 TPnear=15
+mouse=H item=H behavior=H: n=99 P(bot)=0.859 pFP=13 TPnear=30
+
+pFP by (mouse,item,behavior) level (mouse-available pFP only):
+mouse  item  behavior
+H      L     M            1
+       M     L            2
+             M            1
+             H            1
+       H     M            8
+             H           13
+dtype: int64
+pFP without mouse: 19
+
+no-mouse rows:
+                  n  P_bot  pFP
+item behavior                  
+L    L         3718  0.014    0
+     M          632  0.046    0
+     H          213  0.221    1
+M    L          615  0.028    0
+     M          172  0.087    0
+     H           92  0.435    0
+H    L          177  0.136    0
+     M           96  0.344    2
+     H          347  0.856   16

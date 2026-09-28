@@ -1,0 +1,4 @@
+E7_chunks_locked                   rep=0.8993±0.0051 [0.892,0.906] fwd7=0.8838 PR-AUC=0.8447 ROC=0.9531 {'P0': 0.9062, 'P1': 0.8923, 'P2': 0.8944, 'P3': 0.9017, 'P4': 0.9018, 'fwd7': 0.8838} 377.6s
+E7_chunks_locked: avg-OOF P@R 0.9023 -> 0.8984 | TP 548 FP 62 FN 224 | FP removed 7 added 10 | TP removed 16 added 19 | persistent FP still flagged 44/45
+paired bootstrap vs B0: {'p_better': 0.382, 'diff_mean': -0.0017, 'ci95': (-0.015773950364874244, 0.01728975786857746), 'point': -0.004}
+platform P@R (inside segment): {'web+mouse': (0.8522, 0.8537), 'web no mouse': (0.9509, 0.9541), 'android': (0.569, 0.5901), 'ios': (0.1818, 0.1616)}

@@ -1,0 +1,13 @@
+ok:   validation-fold labels flipped -> identical validation residuals
+ok:   MB: validation rows not used in fit / preprocessing
+ok:   IB: validation rows not used in fit / preprocessing
+ok:   BI: validation rows not used in fit / preprocessing
+ok:   MIB: validation rows not used in fit / preprocessing
+ok:   inner residuals of training day 3 computed without day 3
+ok:   representation columns free of target/B0/expert/UA/cookie_id []
+adversarial AUC train-vs-test, IB residuals: 0.509
+adversarial AUC train-vs-test, BI residuals: 0.605
+adversarial AUC train-vs-test, MIB residuals: 0.497
+adversarial AUC train-vs-test, MB residuals: 0.500
+
+SUMMARY {'validation-fold labels flipped -> identical validation residuals': 'ok', 'MB: validation rows not used in fit / preprocessing': 'ok', 'IB: validation rows not used in fit / preprocessing': 'ok', 'BI: validation rows not used in fit / preprocessing': 'ok', 'MIB: validation rows not used in fit / preprocessing': 'ok', 'inner residuals of training day 3 computed without day 3': 'ok', 'representation columns free of target/B0/expert/UA/cookie_id []': 'ok'}

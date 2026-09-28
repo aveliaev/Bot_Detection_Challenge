@@ -1,0 +1,21 @@
+rows 9522 positives 772 P@R 0.902317880794702
+operating point: flagged=604 TP=545 FP=59 FN=227 precision=0.9023 recall=0.7060
+min TP for recall .70 = 541
+
+FP allowed at recall=.70 (TP fixed = 541 ) for target precision:
+  P@R=0.90: FP<= 60  -> remove 0 FP (from current 59) 
+  P@R=0.91: FP<= 53  -> remove 6 FP (from current 59) 
+  P@R=0.92: FP<= 47  -> remove 12 FP (from current 59) 
+  P@R=0.93: FP<= 40  -> remove 19 FP (from current 59) 
+  P@R=0.95: FP<= 28  -> remove 31 FP (from current 59) 
+  P@R=0.97: FP<= 16  -> remove 43 FP (from current 59) 
+  P@R=0.98: FP<= 11  -> remove 48 FP (from current 59) 
+  P@R=0.99: FP<=  5  -> remove 54 FP (from current 59) 
+rank   0-100: FP=  1 TP=99
+rank 100-200: FP=  1 TP=99
+rank 200-300: FP=  7 TP=93
+rank 300-400: FP= 12 TP=88
+rank 400-500: FP= 22 TP=78
+rank 500-604: FP= 16 TP=88
+
+fwd7 rows 6874 P@R 0.9023

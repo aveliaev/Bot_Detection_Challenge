@@ -1,0 +1,3 @@
+all flagged TP: nFP=59 nTP=545 {'B0_score_AUC': 0.724, 'ET': 0.788, 'ET_blend': 0.781, 'cat': 0.761, 'cat_blend': 0.776, 'ET+b0': 0.789, 'ET+b0_blend': 0.778, 'cat+b0': 0.754, 'cat+b0_blend': 0.767}
+rank-matched TP (rank>=min FP rank): nFP=59 nTP=448 {'B0_score_AUC': 0.664, 'ET': 0.737, 'ET_blend': 0.73, 'cat': 0.712, 'cat_blend': 0.724, 'ET+b0': 0.742, 'ET+b0_blend': 0.729, 'cat+b0': 0.704, 'cat+b0_blend': 0.717}
+TP rank 300-604: nFP=59 nTP=255 {'B0_score_AUC': 0.448, 'ET': 0.584, 'ET_blend': 0.517, 'cat': 0.591, 'cat_blend': 0.53, 'ET+b0': 0.595, 'ET+b0_blend': 0.521, 'cat+b0': 0.652, 'cat+b0_blend': 0.568}

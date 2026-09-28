@@ -1,0 +1,36 @@
+
+== all_knn_pos (service likeness quartiles computed over all P0 validation rows)
+svc             svc_Q1(low)    Q2    Q3  Q4(high)
+gen        cls                                   
+gen_top300 FP             1     1     2         5
+           TP            28    48    49       166
+300-604    FP             7     6    12        25
+           TP            56    40    54       104
+604-1500   FN            17    38    35        53
+           TN           119   119   191       324
+rest       FN            15    26    13        30
+           TN          2138  2102  2024      1674
+
+== behav_gmm_pos (service likeness quartiles computed over all P0 validation rows)
+svc             svc_Q1(low)    Q2    Q3  Q4(high)
+gen        cls                                   
+gen_top300 FP             0     0     4         5
+           TP            33    25    62       171
+300-604    FP             3    10    10        27
+           TP            35    41    60       118
+604-1500   FN            27    36    28        52
+           TN           149   146   167       291
+rest       FN            25    13    19        27
+           TN          2109  2109  2030      1690
+
+== all_maha_pos (service likeness quartiles computed over all P0 validation rows)
+svc             svc_Q1(low)    Q2    Q3  Q4(high)
+gen        cls                                   
+gen_top300 FP             0     1     3         5
+           TP            17    49    95       130
+300-604    FP             3     5    12        30
+           TP            34    35    77       108
+604-1500   FN            16    28    43        56
+           TN           135   121   182       315
+rest       FN            16    20    17        31
+           TN          2160  2121  1951      1706
